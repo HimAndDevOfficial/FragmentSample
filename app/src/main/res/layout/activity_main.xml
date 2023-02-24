@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0c0c0"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Below fragment added directly in your layout -->
+    <androidx.fragment.app.FragmentContainerView
+     android:id="@+id/fragmentContainerView"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:name="com.example.fragmentsampleproject.FragmentOne" />
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_marginTop="20dp"
+        android:id="@+id/fragmentContainerViewTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+
+
+
+
+
+
+    <!--
+    <androidx.fragment.app.FragmentContainerView
+    android:id="@+id/fragment_container_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+    -->
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FragmentSampleProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="what_is_fragment">A Fragment represents a reusable portion of your app\'s UI. A fragment defines and manages its own layout, has its own lifecycle, and can handle its own input events. Two ways to add fragment ,in the layout and by programmatically </string>
+    <string name="fragments_benefits">Fragments benefits are modular in nature, light weight , reusable, compatible with android x libraries function </string>
+    <string name="fragments_communication">We can communicate with fragments with the help of so many ways, the most popular is through interface , another advanced way is viewmodel</string>
+
+</resources>
