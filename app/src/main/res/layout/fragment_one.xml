@@ -30,5 +30,5 @@
         android:id="@+id/howFragmentCommunicate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="How Fragment Communicate?" />
+        android:text="Explain Fragment Communication" />
 </LinearLayout>
