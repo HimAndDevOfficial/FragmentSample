@@ -12,6 +12,7 @@ import com.example.fragmentsampleproject.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), ButtonClickInterface {
     private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -31,6 +32,11 @@ class MainActivity : AppCompatActivity(), ButtonClickInterface {
                 add<FragmentTwo>(R.id.fragmentContainerViewTwo, args = bundle)
                 setReorderingAllowed(true)
             }
+
+            supportFragmentManager.commit {
+                add<FragmentThree>(R.id.fragmentContainerViewThree, args = bundle)
+                setReorderingAllowed(true)
+            }
         }
     }
 
@@ -38,6 +44,14 @@ class MainActivity : AppCompatActivity(), ButtonClickInterface {
         val bundle = bundleOf("questionNumber" to questionNumber)
         supportFragmentManager.commit {
             replace<FragmentTwo>(R.id.fragmentContainerViewTwo, args = bundle)
+            setReorderingAllowed(true)
+        }
+    }
+
+    override fun updateAtFragmentThree(text: Int) {
+        val bundle = bundleOf("questionNumber" to text)
+        supportFragmentManager.commit {
+            replace<FragmentThree>(R.id.fragmentContainerViewThree, args = bundle)
             setReorderingAllowed(true)
         }
     }

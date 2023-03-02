@@ -20,4 +20,12 @@
         android:textSize="24dp"
         android:textColor="#FF0000"
         android:text="@string/what_is_fragment" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:id="@+id/buttonAtFragmentTwo">
+
+    </Button>
 </LinearLayout>
